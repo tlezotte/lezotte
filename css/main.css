@@ -2,10 +2,10 @@
 body
 {
 	background-color: #ffffff;
-	background-image: url('../img/natural_paper.png');
+	background-image: url('../img/waterfall.png');
 	background-position: top left;
-	background-repeat: repeat;
-	background-size: ;					
+	background-repeat: no-repeat;
+	background-size: 100%;					
 }
 				
 			
