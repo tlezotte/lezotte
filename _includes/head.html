@@ -5,11 +5,36 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    
+    <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- Android related -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Android Icon -->
+    <link rel="shortcut icon" sizes="196x196" href="img/apps196/vumc.png">
+    <link rel="shortcut icon" sizes="128x128" href="img/apps128/vumc.png">
+
+    <!-- iOS related -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- iOS Icon -->
+    <link rel="apple-touch-icon" href="img/apps60/vumc.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apps76/vumc.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apps120/vumc.png">
+    <!-- Startup Image for iPhone 3GS and iPod Touch 320x460 -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="img/ios/apple-touch-startup-320x460.png" />
+    <!-- Startup Image for iPhone retina display 640x920 -->
+    <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="img/ios/apple-touch-startup-640x920.png" />
+    <!-- Startup Image for iPad portrait 768x1004 -->
+    <link rel="apple-touch-startup-image" media="(orientation: portrait)" href="img/ios/apple-touch-startup-768x1004.png" />
+    <!-- Startup Image for iPad landscape 1024x748 -->
+    <link rel="apple-touch-startup-image" media="(orientation: landscape)" href="img/ios/apple-touch-startup-1024x748.png" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
