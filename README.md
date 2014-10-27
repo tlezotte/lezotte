@@ -1,4 +1,4 @@
-lezotte
-=======
+lezotte.net
+===========
 
-lezotte.net homepage
+lezotte.net landing page
