@@ -1,3 +1,10 @@
+<script>
+  // keep link in app window 
+  $("a").click(function (event) {
+    event.preventDefault();
+    window.location = $(this).attr("href");
+  });
+</script>
 <!-- jQuery -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
