@@ -3,7 +3,7 @@ title: LeZotte.net
 email: tom@lezotte.net
 description: Landing page for LeZotte.net
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lezotte.net" # the base hostname & protocol for your site
+url: "http://www.lezotte.net" # the base hostname & protocol for your site
 twitter_username: tomlezotte
 github_username:  tlezotte
 
