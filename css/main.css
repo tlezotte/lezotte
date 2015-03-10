@@ -95,6 +95,14 @@ i {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
+#nashville .location, #charleston .location, #stclair .location {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
 #nashville ul, #charleston ul, #stclair ul {
   margin: 0;
   padding: 0;
