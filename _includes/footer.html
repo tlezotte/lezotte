@@ -22,7 +22,7 @@ $(document).ready(function() {
     success: function(weather) {
       html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
       html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li class="currently">'+weather.currently+'</li>';
+      // html += '<ul><li class="currently">'+weather.currently+'</li>';
       // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
   
       $("#nashville").html(html);
@@ -40,7 +40,7 @@ $(document).ready(function() {
     success: function(weather) {
       html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
       html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li class="currently">'+weather.currently+'</li>';
+      // html += '<ul><li class="currently">'+weather.currently+'</li>';
       // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
   
       $("#charleston").html(html);
@@ -58,7 +58,7 @@ $(document).ready(function() {
     success: function(weather) {
       html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
       html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li class="currently">'+weather.currently+'</li>';
+      // html += '<ul><li class="currently">'+weather.currently+'</li>';
       // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
   
       $("#stclair").html(html);
