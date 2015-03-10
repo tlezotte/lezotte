@@ -91,7 +91,7 @@ i {
 #nashville h2, #charleston h2, #stclair h2 {
   margin: 0 0 8px;
   color: #fff;
-  font-size: 100px;
+  font-size: 50px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
@@ -105,11 +105,11 @@ i {
 #nashville li, #charleston li, #stclair li {
   background: #fff;
   background: rgba(255,255,255,0.90);
-  padding: 20px;
+  padding: 5px;
   display: inline-block;
   border-radius: 5px;
 }
 
 #nashville .currently, #charleston .currently, #stclair .currently {
-  margin: 0 20px;
+  margin: 0 5px;
 }	
