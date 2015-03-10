@@ -10,11 +10,11 @@ body
 
 @font-face {
     font-family: 'fab';
-    src: url('fonts/FontAwesomeBrands-Regular-webfont.eot');
-    src: url('fonts/FontAwesomeBrands-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FontAwesomeBrands-Regular-webfont.woff') format('woff'),
-         url('fonts/FontAwesomeBrands-Regular-webfont.ttf') format('truetype'),
-         url('fonts/FontAwesomeBrands-Regular-webfont.svg') format('svg');
+    src: url('../fonts/FontAwesomeBrands-Regular-webfont.eot');
+    src: url('../fonts/FontAwesomeBrands-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FontAwesomeBrands-Regular-webfont.woff') format('woff'),
+         url('../fonts/FontAwesomeBrands-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/FontAwesomeBrands-Regular-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
