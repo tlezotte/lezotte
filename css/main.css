@@ -23,13 +23,6 @@ body {
   font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-#weather {
-  width: 500px;
-  margin: 0px auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 i {
   color: #fff;
   font-family: weather;
@@ -87,6 +80,11 @@ i {
 .icon-45:before { content: "S"; }
 .icon-46:before { content: "U"; }
 .icon-47:before { content: "S"; }
+
+
+#nashville, #charleston, #stclair {
+  text-align: center;
+}
 
 #nashville h2, #charleston h2, #stclair h2 {
   margin: 0 0 8px;
