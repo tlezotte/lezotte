@@ -132,7 +132,7 @@ i {
 }	
 
 .weather {
-  background-image: url('../img/black_transparent.png');
+  /*background-image: url('../img/black_transparent.png');*/
   background-position: top left;
   background-repeat: repeat;
 }
