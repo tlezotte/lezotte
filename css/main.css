@@ -130,3 +130,9 @@ i {
 #nashville .currently, #charleston .currently, #stclair .currently {
   margin: 0 5px;
 }	
+
+.weather {
+  background-image: url('../img/black_transparent.png');
+  background-position: top left;
+  background-repeat: repeat;
+}
