@@ -136,3 +136,9 @@ i {
   background-position: top left;
   background-repeat: repeat;
 }
+
+.trans_white {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
