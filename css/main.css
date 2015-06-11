@@ -142,3 +142,6 @@ i {
     border-color: white;
     color: white;
 }
+a:hover.trans_white {
+    color: white;
+}
