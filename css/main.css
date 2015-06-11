@@ -145,3 +145,12 @@ i {
 a:hover.trans_white {
     color: white;
 }
+.btn:hover, .btn:focus {
+    color: whitesmoke;
+}
+.form-control:focus {
+    border-color: whitesmoke;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
+}
