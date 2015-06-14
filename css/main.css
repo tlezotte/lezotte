@@ -151,3 +151,15 @@ i {
     -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
     box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
 }
+::-webkit-input-placeholder {
+    color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder {
+    color: white;
+}
