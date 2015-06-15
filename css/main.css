@@ -151,18 +151,18 @@ i {
     -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
     box-shadow: inset 0 1px 1px rgba(255,255,255,.075),0 0 8px rgba(245,245,245,.6);
 }
-*::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     color: #ffffff;
 }
-*:-moz-placeholder {
+:-moz-placeholder {
     /* FF 4-18 */
     color: #ffffff;
 }
-*::-moz-placeholder {
+::-moz-placeholder {
     /* FF 19+ */
     color: #ffffff;
 }
-*:-ms-input-placeholder {
+:-ms-input-placeholder {
     /* IE 10+ */
     color: #ffffff;
 }
