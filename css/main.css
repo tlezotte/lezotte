@@ -2,7 +2,7 @@
 body
 {
 	background-color: #ffffff;
-	background-image: url('../img/smokyfall.jpg');
+	background-image: url('../img/river.png');
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: 100%;					
@@ -165,4 +165,11 @@ i {
 :-ms-input-placeholder {
     /* IE 10+ */
     color: #ffffff;
+}
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

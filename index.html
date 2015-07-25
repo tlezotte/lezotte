@@ -2,7 +2,12 @@
 layout: default
 ---
 <!-- <img src="img/CofA.png" class="center-block img-responsive" /> -->
-<div class="container-fluid">
+<div class="container-fluid covervid-wrapper">
+    <video class="covervid-video" autoplay loop poster="img/river.png">
+        <source src="videos/river.webm" type="video/webm">
+        <source src="videos/river.m4v" type="video/mp4">
+    </video>
+
     <form class="form-inline" method="get" action="http://www.google.com/search">
         <div class="row" style="padding-bottom: 15px;">
             <div class="col-sm-6 col-sm-offset-3">
@@ -16,8 +21,8 @@ layout: default
         </div>
     </form>
 	<div class="row">
-        <a href="http://m.weather.com/weather/today/37219"><div id="nashville" class="col-md-2 col-md-offset-3 weather"></div></a>
-        <a href="http://m.weather.com/weather/today/29401"><div id="charleston" class="col-md-2 weather"></div></a>
-        <a href="http://m.weather.com/weather/today/48079"><div id="stclair" class="col-md-2 weather"></div></a>
+        <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=37219"><div id="nashville" class="col-md-2 col-md-offset-3 weather"></div></a>
+        <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=29401"><div id="charleston" class="col-md-2 weather"></div></a>
+        <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=48079"><div id="stclair" class="col-md-2 weather"></div></a>
 	</div>
 </div>
