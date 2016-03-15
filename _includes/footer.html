@@ -1,17 +1,7 @@
-<nav class="navbar navbar-fixed-bottom">
-  <div class="container">
-    <a href="https://twitter.com/tomlezotte" class="twitter-follow-button" data-show-count="false">Follow @tomlezotte</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  </div>
-</nav>
-
-
 <!-- jQuery -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- Simple Weather -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
 
 
 <script>
@@ -21,60 +11,8 @@
     window.location = $(this).attr("href");
   });
 
-  // Docs at http://simpleweatherjs.com
-$(document).ready(function() {
-  $.simpleWeather({
-    zipcode: '37219',
-    location: 'Nashville',
-    unit: 'f',
-    success: function(weather) {
-      html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
-      html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      // html += '<ul><li class="currently">'+weather.currently+'</li>';
-      // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
-      $("#nashville").html(html);
-    },
-    error: function(error) {
-      $("#nashville").html('<p>'+error+'</p>');
-    }
-  });
-  
-  $.simpleWeather({
-    zipcode: '29401',
-    location: 'Charleston',
-    unit: 'f',
-    success: function(weather) {
-      html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
-      html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      // html += '<ul><li class="currently">'+weather.currently+'</li>';
-      // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
-      $("#charleston").html(html);
-    },
-    error: function(error) {
-      $("#charleston").html('<p>'+error+'</p>');
-    }
-  });
-  
-  $.simpleWeather({
-    zipcode: '48079',
-    location: 'St. Clair, MI',
-    unit: 'f',
-    success: function(weather) {
-      html = '<p class="location">'+weather.city+', '+weather.region+'</p>';
-      html += '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      // html += '<ul><li class="currently">'+weather.currently+'</li>';
-      // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
-      $("#stclair").html(html);
-    },
-    error: function(error) {
-      $("#stclair").html('<p>'+error+'</p>');
-    }
-  });
 
-  
+$(document).ready(function() {
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
