@@ -2,7 +2,7 @@
 body
 {
 	background-color: #ffffff;
-	background-image: url('../img/smokyfall.jpg');
+	/*background-image: url('../img/smokyfall.jpg');*/
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: 100%;					
@@ -139,7 +139,7 @@ i {
 
 .trans_white {
     background-color: transparent;
-    border-color: white;
+    /*border-color: white;*/
     color: white;
 }
 .btn:hover, .btn:focus {
