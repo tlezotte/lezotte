@@ -96,7 +96,7 @@ i {
 .trans_white {
     background-color: transparent;
     /*border-color: white;*/
-    color: white;
+    /*color: white;*/
 }
 .btn:hover, .btn:focus {
     color: whitesmoke;
