@@ -178,6 +178,7 @@ i {
     width: 50%;
     margin: auto;
     float: none;
+    background-color: rgba(220, 223, 226, 0.61);
 }
 .table a {
     color: #000;
