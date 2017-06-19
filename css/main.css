@@ -178,9 +178,12 @@ i {
     width: 50%;
     margin: auto;
     float: none;
-    background-color: rgba(220, 223, 226, 0.61);
+    background-color: rgba(220, 223, 226, 0.60);
 }
 .table a {
     color: #000;
     text-decoration: underline;
+}
+.table thead tr {
+    background-color: rgba(220, 223, 226, 0.75);
 }
