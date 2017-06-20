@@ -1,7 +1,7 @@
 <!-- jQuery -->
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
   // keep link in app window
@@ -16,20 +16,15 @@
     $(this).tab('show')
   });
 
+  // GPS
   $.ajax({
-      url: "https://geoip-db.com/jsonp",
-      jsonpCallback: "callback",
-      dataType: "jsonp",
-      success: function( location ) {
-          //$('#country').html(location.country_name);
-          //$('#state').html(location.state);
-          //$('#city').html(location.city);
-          //$('#latitude').html(location.latitude);
-          //$('#longitude').html(location.longitude);
-          //$('#ip').html(location.IPv4);
-          var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
-          $('forecast_embed').src = mapLocation;
-      }
+    url: "https://geoip-db.com/jsonp",
+    jsonpCallback: "callback",
+    dataType: "jsonp",
+    success: function( location ) {
+      var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
+      $("#forecast_embed").src = mapLocation;
+    }
   });
 
   // google analytics
