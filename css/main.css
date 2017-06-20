@@ -5,7 +5,7 @@ body
 	/*background-image: url('../img/smokyfall.jpg');*/
 	background-position: top left;
 	background-repeat: no-repeat;
-	background-size: 100%;					
+	background-size: 100%;
 }
 
 @font-face {
@@ -131,7 +131,7 @@ i {
 }
 
 .table {
-    width: 50%;
+    width: 75%;
     margin: auto;
     float: none;
     background-color: rgba(220, 223, 226, 0.60);

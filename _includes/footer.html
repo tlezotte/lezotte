@@ -16,6 +16,22 @@
     $(this).tab('show')
   });
 
+  $.ajax({
+      url: "https://geoip-db.com/jsonp",
+      jsonpCallback: "callback",
+      dataType: "jsonp",
+      success: function( location ) {
+          //$('#country').html(location.country_name);
+          //$('#state').html(location.state);
+          //$('#city').html(location.city);
+          //$('#latitude').html(location.latitude);
+          //$('#longitude').html(location.longitude);
+          //$('#ip').html(location.IPv4);
+          var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
+          $('forecast_embed').src = mapLocation;
+      }
+  });
+
   // google analytics
   $(document).ready(function() {
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
