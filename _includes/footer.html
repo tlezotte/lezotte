@@ -4,27 +4,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
-  // keep link in app window
-  $("a").click(function (event) {
-    event.preventDefault();
-    window.location = $(this).attr("href");
-  });
+  $(document).ready(function() {
+    // GPS
+    $.ajax({
+      url: "https://geoip-db.com/jsonp",
+      jsonpCallback: "callback",
+      dataType: "jsonp",
+      success: function( location ) {
+        var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
+        $("#forecast_embed").src = mapLocation;
+      }
+    });
 
-  // tabs
-  $('#hikingTabs a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-  });
+    // keep link in app window
+    $("a").click(function (event) {
+      event.preventDefault();
+      window.location = $(this).attr("href");
+    });
 
-  // GPS
-  $.ajax({
-    url: "https://geoip-db.com/jsonp",
-    jsonpCallback: "callback",
-    dataType: "jsonp",
-    success: function( location ) {
-      var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
-      $("#forecast_embed").src = mapLocation;
-    }
+    // tabs
+    $('#hikingTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
   });
 
   // google analytics
