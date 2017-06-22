@@ -82,5 +82,7 @@ body {
     text-decoration: underline;
 }
 .table thead tr {
-    background-color: rgba(220, 223, 226, 0.75);
+    /*background-color: rgba(220, 223, 226, 0.75);*/
+    font-weight: bold;
+    font-size: 16px;
 }
