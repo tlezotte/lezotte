@@ -12,7 +12,7 @@
       dataType: "jsonp",
       success: function( location ) {
         var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
-        $("#forecast_embed").src = mapLocation;
+        $("#forecast_embed").attr('src', mapLocation);
       }
     });
 
