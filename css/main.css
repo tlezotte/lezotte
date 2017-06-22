@@ -75,7 +75,7 @@ body {
 .table {
     margin: auto;
     float: none;
-    background-color: rgba(220, 223, 226, 0.60);
+    /*background-color: rgba(220, 223, 226, 0.60);*/
 }
 .table a {
     color: #000;
