@@ -27,6 +27,11 @@
       e.preventDefault()
       $(this).tab('show')
     });
+
+    //
+    if ( $('div.topography').length ) {
+      $('body').removeClass('default').addClass('topography');
+    }
   });
 
   // google analytics
