@@ -15,3 +15,19 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+
+    <script>
+      $(document).ready(function() {
+        // GPS
+        $.ajax({
+          url: "https://geoip-db.com/jsonp",
+          jsonpCallback: "callback",
+          dataType: "jsonp",
+          success: function( location ) {
+            var mapLocation = "http://forecast.io/embed/#lat="+location.latitude+"&lon="+location.longitude+"&name="+location.city;
+            $("#forecast_embed").attr('src', mapLocation);
+          }
+        });
+      });
+
+    </script>
