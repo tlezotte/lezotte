@@ -6,6 +6,15 @@ title: LeZotte
 email: tom@lezotte.net
 description: ""
 
+# Team names, titles and social links
+people:
+- name: Tom
+  pic: tom
+  position: Developer
+  social:
+    - title: home
+      url: http://tom.lezotte.net
+
 # Build settings
 markdown: kramdown
 permalink: pretty
