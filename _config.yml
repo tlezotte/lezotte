@@ -1,11 +1,11 @@
+url: http://www.lezotte.net
+baseurl: /
+
 # Site settings
-title: LeZotte.net
+title: LeZotte
 email: tom@lezotte.net
-description: Landing page for LeZotte.net
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.lezotte.net" # the base hostname & protocol for your site
-twitter_username: tomlezotte
-github_username:  tlezotte
+description: ""
 
 # Build settings
 markdown: kramdown
+permalink: pretty

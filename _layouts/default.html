@@ -3,18 +3,15 @@
 
   {% include head.html %}
 
-  <body class="default">
 
-    {% include menu.html %}
+    <body id="page-top" class="index">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
+    {% include header.html %}
+    {% include search.html %}
+    {% include weather.html %}
     {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
 
-  </body>
-
+    </body>
 </html>
